@@ -15,3 +15,7 @@ apt update
 apt install mysql-client
 mysql --version
 
+
+CREATE USER 'dowp'@'%' IDENTIFIED WITH mysql_native_password BY 'dotide';
+GRANT ALL ON dowp.* TO 'dowp'@'%';
+
